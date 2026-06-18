@@ -24,3 +24,8 @@ function wait(sec){
 
 }
 
+console.log(time(), "Start of timer");
+wait(2).then(function(sec){
+    console.log(time(), `End of the timer of ${sec} seconds`)
+})
+
