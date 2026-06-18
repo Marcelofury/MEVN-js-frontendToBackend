@@ -15,5 +15,12 @@ function time(){
     return "" + hour + ":"+ min + ":" + sec+ " ";
 }
 
+function wait(sec){
+    return new Promise(function(resolve, reject){
+        setTimeout(function(){
+            resolve(sec);
+        }, sec*1000)
+    })
 
+}
 
